@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{ /*Div tem um filho que se chama paragrafo, ent com essa tag, oque tiver dentro de <p> ficará oculto (por conta do * display:none*)*/
+            display: none;
+        }
+        div:hover >p{ /*Div tem um filho que se chama paragrafo, ent com essa tag, oque tiver dentro de <p> ficará visivel (por conta do * display:block*)*/
+            display: block;
+            color: white;
+            background-color: green;
+        }
+        div:hover{
+            color:red;
+        }
+        button{
+            border-radius: 10px;
+            padding: 3px;
+            color: rgb(218, 16, 16);
+            background-color: rgba(94, 82, 105, 0.342);
+            ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+     <p> passe o mouse sobreo texto abaixo</p>
+     <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO....</p>
+    </div>
+    <br>
+<a href="pseudo-classes.html"><button>Voltar a página inicial</button></a>
+    
+</body>
+</html>

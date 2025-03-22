@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: burlywood ;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.418);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px  ;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+        }
+        article{
+            background-color: bisque;
+        }
+        article > aside{
+            background-color: antiquewhite;
+        }
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+        div#bola{
+            margin: 10px;
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>meus sites</h1>
+        <nav> <!--menu-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+
+        </nav>
+    </header>
+    <main><!--conteúdo-->
+        <section id="artigo">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, maiores. Explicabo dicta, iste asperiores et, possimus beatae, odit deleniti ut molestiae expedita natus similique sapiente unde debitis sed ad quos.</p>
+                <aside>
+                    <p>escrito por joão susin</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>desenvolvido por joão susin</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
